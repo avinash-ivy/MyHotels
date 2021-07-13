@@ -26,12 +26,12 @@ This group has base classes required for binding between ViewModel and ViewContr
 
 **Screenshots**
 
-<img src="https://github.com/avinash-ivy/ProductListView/blob/main/TempoProductList.png"
-  alt="Tempo Detail"
+<img src="https://github.com/avinash-ivy/MyHotels/blob/main/Screenshots/HotelList.png"
+  alt="Hotels List"
   width="289" height="600">
 </p>
 
-<img src="https://github.com/avinash-ivy/ProductListView/blob/main/TempoDetail.png"
-  alt="Tempo Detail"
+<img src="https://github.com/avinash-ivy/MyHotels/blob/main/Screenshots/HotelDetail.png"
+  alt="Hotel Detail"
   width="289" height="600">
 </p>
