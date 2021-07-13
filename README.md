@@ -1,6 +1,6 @@
 # MyHotels
 
-**Problem Statement:** To show a list of hotels, add a new hotel and edit existing hotel details.
+**Problem Statement:** To show a list of hotels, provision to add a new hotel and edit existing hotel details.
 
 **How to run:** Open MyHotels.xcodeproj. Select MyHotels target and desired iPhone/iPad simulator. Click on Run button.
 
@@ -14,16 +14,15 @@
 
 **HotelsList**
 
-Entities that are required to create Hotels List View. It has custom TableViewController and TableViewCell classes for UI and HotelEntity structure for Model. A ViewModel class to communicate effectively between ViewController and Model.
+This group has custom TableViewController and TableViewCell classes for UI, HotelEntity structure for Model and a ViewModel class to communicate effectively between ViewController and Model.
 
 **Hotel Detail**
 
-Entities in this component are written following the Tempo Architecture. Since, details page doesn't have a complex UI, component part of tempo is ignored here. Component duty is delegated to Presenter. 
+This group has custom UIViewController. Since, details page doesn't have a complex model part, Model and ViewModel of ListViewController are reused.
 
 **Base**
 
-Base classes required for binding between ViewModel and ViewController. ViewControllers are subscribed for required changes in the ViewModel.
-
+This group has base classes required for binding between ViewModel and ViewController. ViewControllers should be subscribed to ViewModels to get required updates.
 
 **Screenshots**
 
