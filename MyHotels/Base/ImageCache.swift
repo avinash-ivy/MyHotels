@@ -11,16 +11,15 @@ import UIKit
 class ImageCache {
     
     public static let cache = ImageCache()
-    private let cachedImages = NSCache<NSString, UIImage>()
+    //TODO: Can we use NSCache?
+    private var cachedImages = Dictionary<String, UIImage>()
     
     public final func image(name: String) -> UIImage? {
-        let convertedString = name as NSString
-        return cachedImages.object(forKey: convertedString)
+        return cachedImages[name]
     }
     
     public final func saveImage(name: String, image: UIImage) {
-        let convertedString = name as NSString
-        cachedImages.setObject(image, forKey: convertedString)
-        print("DEBUG:: cachedImage with name \(convertedString)")
+        cachedImages[name] = image
+        print("DEBUG:: cachedImage with name \(name)")
     }
 }
