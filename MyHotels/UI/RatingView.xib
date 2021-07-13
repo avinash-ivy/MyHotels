@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RatingView" customModule="MyHotels" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey-star" translatesAutoresizingMaskIntoConstraints="NO" id="wNu-bb-NOY">
+                    <rect key="frame" x="0.0" y="3.5" width="13.5" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wNu-bb-NOY" secondAttribute="height" multiplier="1:1" id="69r-6c-fBz"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey-star" translatesAutoresizingMaskIntoConstraints="NO" id="af1-oM-tEf">
+                    <rect key="frame" x="18.5" y="3.5" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="af1-oM-tEf" secondAttribute="height" multiplier="1:1" id="qRv-oI-AQo"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey-star" translatesAutoresizingMaskIntoConstraints="NO" id="wed-nr-Rfd">
+                    <rect key="frame" x="36.5" y="3.5" width="13.5" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wed-nr-Rfd" secondAttribute="height" multiplier="1:1" id="bdj-Td-0jv"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey-star" translatesAutoresizingMaskIntoConstraints="NO" id="cZV-dV-Sn6">
+                    <rect key="frame" x="55" y="3.5" width="13.5" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cZV-dV-Sn6" secondAttribute="height" multiplier="1:1" id="qTi-Sq-Gjh"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grey-star" translatesAutoresizingMaskIntoConstraints="NO" id="3rW-P7-FQH">
+                    <rect key="frame" x="73.5" y="3.5" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3rW-P7-FQH" secondAttribute="height" multiplier="1:1" id="Sgb-zG-ltZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wNu-bb-NOY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6hx-PG-XLI"/>
+                <constraint firstItem="af1-oM-tEf" firstAttribute="leading" secondItem="wNu-bb-NOY" secondAttribute="trailing" constant="5" id="7Bf-Yb-1S0"/>
+                <constraint firstItem="af1-oM-tEf" firstAttribute="height" secondItem="wNu-bb-NOY" secondAttribute="height" id="BIJ-S6-rE7"/>
+                <constraint firstItem="cZV-dV-Sn6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BQH-5j-cPD"/>
+                <constraint firstItem="af1-oM-tEf" firstAttribute="height" secondItem="wed-nr-Rfd" secondAttribute="height" id="Boa-IY-I6W"/>
+                <constraint firstItem="wed-nr-Rfd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GFg-Tc-plt"/>
+                <constraint firstItem="3rW-P7-FQH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LQX-xW-suB"/>
+                <constraint firstItem="3rW-P7-FQH" firstAttribute="height" secondItem="cZV-dV-Sn6" secondAttribute="height" id="X0H-nY-Pon"/>
+                <constraint firstItem="cZV-dV-Sn6" firstAttribute="leading" secondItem="wed-nr-Rfd" secondAttribute="trailing" constant="5" id="YQQ-vc-2Uh"/>
+                <constraint firstItem="af1-oM-tEf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fc2-rh-RSI"/>
+                <constraint firstItem="3rW-P7-FQH" firstAttribute="leading" secondItem="cZV-dV-Sn6" secondAttribute="trailing" constant="5" id="gn4-iz-Pgv"/>
+                <constraint firstItem="cZV-dV-Sn6" firstAttribute="height" secondItem="wed-nr-Rfd" secondAttribute="height" id="hF5-gZ-axW"/>
+                <constraint firstItem="wed-nr-Rfd" firstAttribute="leading" secondItem="af1-oM-tEf" secondAttribute="trailing" constant="5" id="lWP-7i-0dh"/>
+                <constraint firstItem="wNu-bb-NOY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ue1-1d-tdB"/>
+                <constraint firstItem="wNu-bb-NOY" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.666667" id="wpV-sa-K5L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-112.31884057971016" y="-351.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="grey-star" width="835" height="794"/>
+    </resources>
+</document>
