@@ -107,7 +107,6 @@ class HotelsListViewController: UITableViewController {
             if let validImage = image {
                 cell.hotelImage.image = validImage
             } else {
-                print("DEBUG:: Image not available with name \(hotelData.imageName)")
                 cell.hotelImage.image = UIImage(named: "hotel-placeholder")
             }
             cell.hotelName.text = hotelData.name

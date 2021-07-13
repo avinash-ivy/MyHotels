@@ -20,6 +20,5 @@ class ImageCache {
     
     public final func saveImage(name: String, image: UIImage) {
         cachedImages[name] = image
-        print("DEBUG:: cachedImage with name \(name)")
     }
 }
